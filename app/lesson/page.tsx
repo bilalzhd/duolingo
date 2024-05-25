@@ -16,8 +16,7 @@ export default async function LessonPage() {
 
     const initialPercentage = (lesson.challenges.filter(challenge => challenge.completed).length / lesson.challenges.length) * 100;
 
-    console.log(JSON.stringify(lesson.challenges))
-
+    
     return (
         <Quiz
             initialLessonId={lesson.id}
